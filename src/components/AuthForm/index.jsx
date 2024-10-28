@@ -1,6 +1,6 @@
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
-import { authSchema } from '@/data/authSchema';
+import { authSchema } from '../../data/AuthSchema'
 import { InputField } from '@/components/InputField';
 import { Button } from '@/components/Button';
 
