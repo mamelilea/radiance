@@ -18,7 +18,7 @@ export const Navbar = () => {
 
         {/* Logo atau brand */}
         <Link to="/" className="text-blue text-3xl font-bold">
-          Radiance
+          Radiance Test
         </Link>
         {/* Links */}
         <div className="flex space-x-14 items-center">
