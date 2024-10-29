@@ -6,8 +6,8 @@ export const login = async (data) => {
   return response.data;
 };
 
-export const signup = async (data) => {
-  const response = await axios.post(API_ENDPOINTS.SIGNUP, data);
+export const register = async (data) => {
+  const response = await axios.post(API_ENDPOINTS.REGISTER, data);
   return response.data;
 };
 

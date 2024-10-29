@@ -4,7 +4,7 @@ import { KataMerekaSection } from "./Section/KataMereka";
 
 export const Landing = () => {
   return (
-    <div className='min-h-screen bg-soft-blue w-full flex flex-col items-center font-poppins'>
+    <div className='min-h-screen bg-soft-blue w-full flex flex-col items-center font-poppins py-32'>
       <div className="w-[85%]">
         <LandingSection />
         <LayananSection />

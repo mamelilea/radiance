@@ -13,6 +13,7 @@ export default {
         'white' : "#FFFFFF",
         'grey' : "#656161",
         'soft-grey' : "#D9D9D9",
+        'black-grey' : "#4A4545",
       },
       fontFamily: {
         'poppins' : ['Poppins', 'sans-serif']

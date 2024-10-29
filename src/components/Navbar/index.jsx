@@ -13,8 +13,8 @@ export const Navbar = () => {
   };
 
   return (
-    <nav className="bg-white py-5 font-poppins fixed top-0 w-full z-50 border-b-orange-950 border-2">
-      <div className="container mx-auto flex justify-between items-center">
+    <nav className="bg-white py-5 font-poppins fixed top-0 w-full z-50">
+      <div className="container mx-auto w-[85%] flex justify-between items-center">
 
         {/* Logo atau brand */}
         <Link to="/" className="text-blue text-3xl font-bold">

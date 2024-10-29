@@ -14,8 +14,8 @@ export const LandingSection = () => {
                         Deteksi Sekarang
                     </Button>
                 </div>
-                <div className='w-[50%] '>
-                    <img src="/img/Beranda/landing.webp" alt="" className=" h-full w-full " />
+                <div className='w-1/2 flex items-center justify-center'>
+                    <img src="/img/Beranda/landing.webp" alt="" className="w-full scale-110" />
                 </div>
             </div>
         </div>

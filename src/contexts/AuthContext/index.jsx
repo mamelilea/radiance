@@ -34,7 +34,7 @@ export const AuthProvider = ({ children }) => {
         return existingUsers.some((user) => user.email === email);
     };
 
-    const handleSignup = async (data) => {
+    const handleRegister = async (data) => {
         try {
             if (checkUserExists(data.email)) {
                 showError('User with this email already exists. Please login.');
@@ -45,11 +45,11 @@ export const AuthProvider = ({ children }) => {
                 localStorage.setItem('users', JSON.stringify(existingUsers));
                 sessionStorage.setItem('user', JSON.stringify(newUser));
                 setUser(newUser);
-                Alert.showSuccess('Signup successful!');
+                Alert.showSuccess('Register successful!');
                 navigate('/');
             }
         } catch (err) {
-            showError('Signup failed');
+            showError('Register failed');
         }
     };
 
@@ -98,7 +98,7 @@ export const AuthProvider = ({ children }) => {
 
 
     return (
-        <AuthContext.Provider value={{ user, handleLogin, handleSignup, logout, upgradeToPremium, error }}>
+        <AuthContext.Provider value={{ user, handleLogin, handleRegister, logout, upgradeToPremium, error }}>
             {children}
         </AuthContext.Provider>
     );

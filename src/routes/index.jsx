@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 // pages
 import { Login } from '@/pages/Login';
-import { Signup } from '@/pages/Signup';
+import { Register } from '@/pages/Register';
 import { Landing } from '@/pages/Landing';
 import { UpgradePremium } from '@/pages/UpgradePremium';
 import { Layout } from '@/components/Layout';
@@ -22,8 +22,8 @@ const AppRoutes = () => {
         element={<Login />}
       />
       <Route
-        path="/signup"
-        element={<Signup />}
+        path="/register"
+        element={<Register />}
       />
       <Route
         path="/"

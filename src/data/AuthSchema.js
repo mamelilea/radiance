@@ -2,7 +2,7 @@ import { z } from 'zod';
 
 const passwordRequirements = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
 
-const signupSchema = z.object({
+const registerSchema = z.object({
   username: z.string()
       .min(1, { message: 'Username is required' })
       .regex(/^[A-Za-z0-9]+$/, { message: 'Username must be alphanumeric' }),
@@ -19,4 +19,4 @@ const loginSchema = z.object({
     password: z.string().min(6, 'Password must be at least 6 characters'),
   });
 
-  export const authSchema = (isSignup) => (isSignup ? signupSchema : loginSchema);
+  export const authSchema = (isRegister) => (isRegister ? registerSchema : loginSchema);
